@@ -48,7 +48,7 @@ public class Dictionary {
         System.out.println("Writing dictionary file...");
         ObjectMapper mapper = new ObjectMapper();
         try {
-            mapper.writeValue(new File("D:/Projects/dictionary.json"), dictionary);
+            mapper.writeValue(new File("D:/Projects/dictionary.json"), dictionary.values());
         } catch (JsonProcessingException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

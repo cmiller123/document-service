@@ -7,6 +7,13 @@ public class Document {
     private long length;
     private String path;
 
+    public Document() {
+        this.name = "";
+        this.version = "";
+        this.length = 0;
+        this.path = "";
+    }
+
     public Document(String name, String version, long length, String path) {
         this.name = name;
         this.version = version;
