@@ -12,7 +12,8 @@ public class DocumentServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DocumentServiceApplication.class, args);
 
-		Dictionary dictionary = new Dictionary();
+		// initialize dictionary
+		Dictionary dictionary = Dictionary.getInstance();
 		dictionary.initializeDictionary();
 	}
 
